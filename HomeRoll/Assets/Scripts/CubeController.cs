@@ -86,7 +86,7 @@ namespace GameManagement
             {
                 
                 float halfScale = 1f/ 2f;  // cube size devided by two to find  the connecting edge to rotate aroun
-                Vector3 moveAroundPoint = new Vector3(transform.position.x, halfScale, transform.position.z);
+                Vector3 moveAroundPoint = new Vector3(transform.position.x, transform.position.y+halfScale, transform.position.z);
                 Vector3 moveDirection = Vector3.zero;
      
                 switch (direction)
