@@ -126,7 +126,7 @@ namespace GameManagement
             float lastFrameAngle = 0;
             while (currentTime < time)
             {
-                currentTime += Time.deltaTime;
+                currentTime += Time.fixedDeltaTime;
                 if (currentTime > time)
                 {
                     currentTime = time;
@@ -139,7 +139,7 @@ namespace GameManagement
                 transform.position = new Vector3(View.position.x, transform.position.y, View.position.z);
                 View.localPosition = new Vector3(0, View.localPosition.y, 0);
                 
-                yield return null;
+                yield return new WaitForFixedUpdate();
             }
             StopCubeMovement();
         }
