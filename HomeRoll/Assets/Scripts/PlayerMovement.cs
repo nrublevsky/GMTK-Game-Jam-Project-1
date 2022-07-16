@@ -74,12 +74,15 @@ public class PlayerMovement : MonoBehaviour
     public IEnumerator Move(Vector3 rotationDirection, Vector3 movementDirection)
     {
         isMoving = true;
-        yield return new WaitForSeconds(1);
+    
         while (isMoving)
         {
-            MoveInDirection(rotationDirection,movementDirection);
+            
+            yield return new WaitForSeconds(1);
+            MoveInDirection(rotationDirection, movementDirection);
+            isMoving = false;
         }
-        isMoving = false;
+        
 
     }
 }
