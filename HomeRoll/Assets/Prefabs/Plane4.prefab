@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7416215058828402617}
   m_Layer: 0
   m_Name: Plane4
-  m_TagString: Untagged
+  m_TagString: SideTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -5,8 +5,15 @@ using UnityEngine;
 public class TileBehavior : MonoBehaviour
 {
     public int tileState;
+
+    public GameObject dice;
+
+    public DiceSideBehavior sideBehavior;
+
+
     void Start()
     {
+        dice = GameObject.Find("Player");
         
     }
 
@@ -16,6 +23,11 @@ public class TileBehavior : MonoBehaviour
         
     }
 
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        
+    }
     public void CheckState()
     {
         switch (tileState)
