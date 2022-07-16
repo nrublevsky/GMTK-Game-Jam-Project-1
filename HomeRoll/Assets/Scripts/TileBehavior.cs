@@ -27,6 +27,16 @@ public class TileBehavior : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         
+        
+
+        if (gameObject.tag == "SideTile")
+        {
+            Debug.Log("blip");
+        }
+        if (gameObject.tag == "Destroyer")
+        {
+            Debug.Log("blop");
+        }
     }
     public void CheckState()
     {
