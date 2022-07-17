@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6339037535423469549}
   m_Layer: 0
   m_Name: FloorTile (45)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,6 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037535423469549
@@ -144,7 +145,7 @@ GameObject:
   - component: {fileID: 6339037535492662614}
   m_Layer: 0
   m_Name: FloorTile (6)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -238,6 +239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037535492662614
@@ -268,9 +270,10 @@ GameObject:
   - component: {fileID: 6339037535511820798}
   - component: {fileID: 6339037535511820799}
   - component: {fileID: 6339037535511820796}
+  - component: {fileID: 543269280408968587}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -415,6 +418,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &543269280408968587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6339037535511820794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12ef316d8107d74d95bbc01253bd191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilesList: []
+  availableTiles: 0
 --- !u!1 &6339037535527261122
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,7 +448,7 @@ GameObject:
   - component: {fileID: 6339037535527261125}
   m_Layer: 0
   m_Name: FloorTile (44)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -525,6 +542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037535527261125
@@ -559,7 +577,7 @@ GameObject:
   - component: {fileID: 6339037535559816556}
   m_Layer: 0
   m_Name: FloorTile (9)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -653,6 +671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037535559816556
@@ -687,7 +706,7 @@ GameObject:
   - component: {fileID: 6339037535563464199}
   m_Layer: 0
   m_Name: FloorTile (10)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -781,6 +800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037535563464199
@@ -815,7 +835,7 @@ GameObject:
   - component: {fileID: 6339037535571010634}
   m_Layer: 0
   m_Name: FloorTile (32)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -909,6 +929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037535571010634
@@ -943,7 +964,7 @@ GameObject:
   - component: {fileID: 6339037535610925709}
   m_Layer: 0
   m_Name: FloorTile (18)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1037,6 +1058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037535610925709
@@ -1071,7 +1093,7 @@ GameObject:
   - component: {fileID: 6339037535664536505}
   m_Layer: 0
   m_Name: FloorTile (60)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1165,6 +1187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037535664536505
@@ -1199,7 +1222,7 @@ GameObject:
   - component: {fileID: 6339037535665627528}
   m_Layer: 0
   m_Name: FloorTile (31)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1293,6 +1316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037535665627528
@@ -1327,7 +1351,7 @@ GameObject:
   - component: {fileID: 6339037535773193280}
   m_Layer: 0
   m_Name: FloorTile (42)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1421,6 +1445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037535773193280
@@ -1455,7 +1480,7 @@ GameObject:
   - component: {fileID: 6339037535807912666}
   m_Layer: 0
   m_Name: FloorTile (3)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1549,6 +1574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037535807912666
@@ -1583,7 +1609,7 @@ GameObject:
   - component: {fileID: 6339037535857487797}
   m_Layer: 0
   m_Name: FloorTile (52)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1677,6 +1703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037535857487797
@@ -1711,7 +1738,7 @@ GameObject:
   - component: {fileID: 6339037535862781464}
   m_Layer: 0
   m_Name: FloorTile (8)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1805,6 +1832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037535862781464
@@ -1839,7 +1867,7 @@ GameObject:
   - component: {fileID: 6339037535888473032}
   m_Layer: 0
   m_Name: FloorTile (25)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1933,6 +1961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037535888473032
@@ -1967,7 +1996,7 @@ GameObject:
   - component: {fileID: 6339037535906474206}
   m_Layer: 0
   m_Name: FloorTile (49)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2061,6 +2090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037535906474206
@@ -2095,7 +2125,7 @@ GameObject:
   - component: {fileID: 6339037535908903513}
   m_Layer: 0
   m_Name: FloorTile (58)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2189,6 +2219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037535908903513
@@ -2223,7 +2254,7 @@ GameObject:
   - component: {fileID: 6339037535972214574}
   m_Layer: 0
   m_Name: FloorTile (63)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2317,6 +2348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037535972214574
@@ -2351,7 +2383,7 @@ GameObject:
   - component: {fileID: 6339037535988460673}
   m_Layer: 0
   m_Name: FloorTile (59)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2445,6 +2477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037535988460673
@@ -2479,7 +2512,7 @@ GameObject:
   - component: {fileID: 6339037536000722545}
   m_Layer: 0
   m_Name: FloorTile (47)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2573,6 +2606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536000722545
@@ -2607,7 +2641,7 @@ GameObject:
   - component: {fileID: 6339037536012448774}
   m_Layer: 0
   m_Name: FloorTile (55)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2701,6 +2735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536012448774
@@ -2735,7 +2770,7 @@ GameObject:
   - component: {fileID: 6339037536034807840}
   m_Layer: 0
   m_Name: FloorTile (36)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2829,6 +2864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536034807840
@@ -2863,7 +2899,7 @@ GameObject:
   - component: {fileID: 6339037536039804065}
   m_Layer: 0
   m_Name: FloorTile (30)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2957,6 +2993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536039804065
@@ -2991,7 +3028,7 @@ GameObject:
   - component: {fileID: 6339037536041668126}
   m_Layer: 0
   m_Name: FloorTile (13)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3085,6 +3122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536041668126
@@ -3119,7 +3157,7 @@ GameObject:
   - component: {fileID: 6339037536055213036}
   m_Layer: 0
   m_Name: FloorTile (53)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3213,6 +3251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536055213036
@@ -3247,7 +3286,7 @@ GameObject:
   - component: {fileID: 6339037536079585058}
   m_Layer: 0
   m_Name: FloorTile (34)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3341,6 +3380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536079585058
@@ -3375,7 +3415,7 @@ GameObject:
   - component: {fileID: 6339037536095862819}
   m_Layer: 0
   m_Name: FloorTile (1)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3469,6 +3509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536095862819
@@ -3503,7 +3544,7 @@ GameObject:
   - component: {fileID: 6339037536097649881}
   m_Layer: 0
   m_Name: FloorTile (50)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3597,6 +3638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536097649881
@@ -3631,7 +3673,7 @@ GameObject:
   - component: {fileID: 6339037536138965114}
   m_Layer: 0
   m_Name: FloorTile (57)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3725,6 +3767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536138965114
@@ -3759,7 +3802,7 @@ GameObject:
   - component: {fileID: 6339037536152518022}
   m_Layer: 0
   m_Name: FloorTile (28)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3853,6 +3896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536152518022
@@ -3887,7 +3931,7 @@ GameObject:
   - component: {fileID: 6339037536157061361}
   m_Layer: 0
   m_Name: FloorTile (35)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3981,6 +4025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536157061361
@@ -4015,7 +4060,7 @@ GameObject:
   - component: {fileID: 6339037536172079976}
   m_Layer: 0
   m_Name: FloorTile (27)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4109,6 +4154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536172079976
@@ -4143,7 +4189,7 @@ GameObject:
   - component: {fileID: 6339037536229457583}
   m_Layer: 0
   m_Name: FloorTile (15)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4237,6 +4283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536229457583
@@ -4271,7 +4318,7 @@ GameObject:
   - component: {fileID: 6339037536239173578}
   m_Layer: 0
   m_Name: FloorTile (46)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4365,6 +4412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536239173578
@@ -4399,7 +4447,7 @@ GameObject:
   - component: {fileID: 6339037536261774966}
   m_Layer: 0
   m_Name: FloorTile (38)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4493,6 +4541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536261774966
@@ -4527,7 +4576,7 @@ GameObject:
   - component: {fileID: 6339037536270619921}
   m_Layer: 0
   m_Name: FloorTile (61)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4621,6 +4670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536270619921
@@ -4655,7 +4705,7 @@ GameObject:
   - component: {fileID: 6339037536309008198}
   m_Layer: 0
   m_Name: FloorTile (26)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4749,6 +4799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536309008198
@@ -4783,7 +4834,7 @@ GameObject:
   - component: {fileID: 6339037536342104614}
   m_Layer: 0
   m_Name: FloorTile (29)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4877,6 +4928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536342104614
@@ -4911,7 +4963,7 @@ GameObject:
   - component: {fileID: 6339037536344451704}
   m_Layer: 0
   m_Name: FloorTile (43)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5005,6 +5057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536344451704
@@ -5039,7 +5092,7 @@ GameObject:
   - component: {fileID: 6339037536480929055}
   m_Layer: 0
   m_Name: FloorTile (7)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5133,6 +5186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536480929055
@@ -5167,7 +5221,7 @@ GameObject:
   - component: {fileID: 6339037536653670807}
   m_Layer: 0
   m_Name: FloorTile (24)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5261,6 +5315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536653670807
@@ -5295,7 +5350,7 @@ GameObject:
   - component: {fileID: 6339037536657835796}
   m_Layer: 0
   m_Name: FloorTile (39)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5389,6 +5444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536657835796
@@ -5423,7 +5479,7 @@ GameObject:
   - component: {fileID: 6339037536664331344}
   m_Layer: 0
   m_Name: FloorTile (62)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5517,6 +5573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536664331344
@@ -5551,7 +5608,7 @@ GameObject:
   - component: {fileID: 6339037536681159925}
   m_Layer: 0
   m_Name: FloorTile (21)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5645,6 +5702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536681159925
@@ -5679,7 +5737,7 @@ GameObject:
   - component: {fileID: 6339037536885548956}
   m_Layer: 0
   m_Name: FloorTile (17)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5773,6 +5831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536885548956
@@ -5807,7 +5866,7 @@ GameObject:
   - component: {fileID: 6339037536896614831}
   m_Layer: 0
   m_Name: FloorTile (33)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5901,6 +5960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536896614831
@@ -5935,7 +5995,7 @@ GameObject:
   - component: {fileID: 6339037536919919445}
   m_Layer: 0
   m_Name: FloorTile (40)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6029,6 +6089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536919919445
@@ -6063,7 +6124,7 @@ GameObject:
   - component: {fileID: 6339037536980781883}
   m_Layer: 0
   m_Name: FloorTile (22)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6157,6 +6218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037536980781883
@@ -6191,7 +6253,7 @@ GameObject:
   - component: {fileID: 6339037537043521760}
   m_Layer: 0
   m_Name: FloorTile (41)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6285,6 +6347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037537043521760
@@ -6319,7 +6382,7 @@ GameObject:
   - component: {fileID: 6339037537096232349}
   m_Layer: 0
   m_Name: FloorTile (37)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6413,6 +6476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037537096232349
@@ -6447,7 +6511,7 @@ GameObject:
   - component: {fileID: 6339037537139575812}
   m_Layer: 0
   m_Name: FloorTile (20)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6541,6 +6605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037537139575812
@@ -6575,7 +6640,7 @@ GameObject:
   - component: {fileID: 6339037537147711386}
   m_Layer: 0
   m_Name: FloorTile (51)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6669,6 +6734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037537147711386
@@ -6703,7 +6769,7 @@ GameObject:
   - component: {fileID: 6339037537153221927}
   m_Layer: 0
   m_Name: FloorTile (11)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6797,6 +6863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037537153221927
@@ -6831,7 +6898,7 @@ GameObject:
   - component: {fileID: 6339037537162202609}
   m_Layer: 0
   m_Name: FloorTile (12)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6925,6 +6992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037537162202609
@@ -6959,7 +7027,7 @@ GameObject:
   - component: {fileID: 6339037537168276014}
   m_Layer: 0
   m_Name: FloorTile (48)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7053,6 +7121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037537168276014
@@ -7087,7 +7156,7 @@ GameObject:
   - component: {fileID: 6339037537181942750}
   m_Layer: 0
   m_Name: FloorTile (54)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7181,6 +7250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037537181942750
@@ -7215,7 +7285,7 @@ GameObject:
   - component: {fileID: 6339037537186616249}
   m_Layer: 0
   m_Name: FloorTile (14)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7309,6 +7379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037537186616249
@@ -7343,7 +7414,7 @@ GameObject:
   - component: {fileID: 6339037537221256284}
   m_Layer: 0
   m_Name: FloorTile (4)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7437,6 +7508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037537221256284
@@ -7471,7 +7543,7 @@ GameObject:
   - component: {fileID: 6339037537248166626}
   m_Layer: 0
   m_Name: FloorTile (23)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7565,6 +7637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037537248166626
@@ -7599,7 +7672,7 @@ GameObject:
   - component: {fileID: 6339037537398547016}
   m_Layer: 0
   m_Name: FloorTile
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7693,6 +7766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037537398547016
@@ -7727,7 +7801,7 @@ GameObject:
   - component: {fileID: 6339037537409080006}
   m_Layer: 0
   m_Name: FloorTile (56)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7821,6 +7895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037537409080006
@@ -7855,7 +7930,7 @@ GameObject:
   - component: {fileID: 6339037537411617596}
   m_Layer: 0
   m_Name: FloorTile (16)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7949,6 +8024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037537411617596
@@ -7983,7 +8059,7 @@ GameObject:
   - component: {fileID: 6339037537426515561}
   m_Layer: 0
   m_Name: FloorTile (5)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8077,6 +8153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037537426515561
@@ -8111,7 +8188,7 @@ GameObject:
   - component: {fileID: 6339037537476667257}
   m_Layer: 0
   m_Name: FloorTile (19)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8205,6 +8282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037537476667257
@@ -8239,7 +8317,7 @@ GameObject:
   - component: {fileID: 6339037537480034326}
   m_Layer: 0
   m_Name: FloorTile (2)
-  m_TagString: Untagged
+  m_TagString: FloorTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8333,6 +8411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  tilePresent: 0
   dice: {fileID: 0}
   sideBehavior: {fileID: 0}
 --- !u!54 &6339037537480034326

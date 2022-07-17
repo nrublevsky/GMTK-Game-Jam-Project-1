@@ -5,6 +5,7 @@ using UnityEngine;
 public class TileBehavior : MonoBehaviour
 {
     public int tileState;
+    public bool tilePresent;
 
     public GameObject dice;
 
@@ -13,25 +14,24 @@ public class TileBehavior : MonoBehaviour
 
     void Start()
     {
+        tilePresent = true;
         dice = GameObject.Find("Player");
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
 
     private void OnCollisionEnter(Collision collision)
-    {
-        
-        
-
+    { 
         if (gameObject.tag == "SideTile")
         {
             Debug.Log("blip");
+            tilePresent = false;
         }
         if (gameObject.tag == "Destroyer")
         {

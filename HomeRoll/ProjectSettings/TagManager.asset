@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SideTile
   - FloorTile
+  - Floor
   layers:
   - Default
   - TransparentFX
