@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public Text timeCounter;
     public Text finishText;
     public Button nextLevel;
+    public Button quitGame;
+    public Button restartGame;
 
     public bool gameRunning;
 
