@@ -81,6 +81,10 @@ public class GameManager : MonoBehaviour
     {
         FloorManager flManager = floor.GetComponent<FloorManager>();
         tilesLeft = flManager.tilesList.Count;
+        if (tilesLeft < 64)
+        {
+            
+        }
         if (tilesLeft < 1)
         {
             gameRunning = false;
