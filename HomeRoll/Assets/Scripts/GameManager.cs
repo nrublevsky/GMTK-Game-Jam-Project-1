@@ -70,8 +70,8 @@ public class GameManager : MonoBehaviour
         
         if (!gameRunning)
         {
-            
 
+            timeCounter.gameObject.SetActive(false);
             finishText.gameObject.SetActive(true);
             nextLevel.gameObject.SetActive(true);
         }
@@ -81,8 +81,6 @@ public class GameManager : MonoBehaviour
 
     public void FindAll()
     {
-        
-
         SetUpGame();
         Player();
         Floor();
