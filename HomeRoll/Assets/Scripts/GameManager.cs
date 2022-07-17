@@ -31,32 +31,28 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (SceneManager.GetActiveScene().name == "Menu")
+        if (SceneManager.GetActiveScene().name == "StartMenu")
         {
 
         }
-        if (SceneManager.GetActiveScene().name == "Level1")
+        if (SceneManager.GetActiveScene().name == "MainLevel")
         {
-
+            FindAll();
         }
-        if (SceneManager.GetActiveScene().name == "Level2")
-        {
-
-        }
-        if (SceneManager.GetActiveScene().name == "Level3")
-        {
-
-        }
-        FindAll();
-        
-
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        ControlSituation();
+        if (SceneManager.GetActiveScene().name == "StartMenu")
+        {
+
+        }
+        if (SceneManager.GetActiveScene().name == "MainLevel")
+        {
+            ControlSituation();
+        }
+        
     }
     //methods for update
     public void ControlSituation() 
@@ -105,7 +101,8 @@ public class GameManager : MonoBehaviour
             float gTToDisplay = gameTime%1;
             finishText.text = "Good Job! We Are very proud of you =* \n Your remaining time: " + gTToDisplay;
             finishText.gameObject.SetActive(true);
-            nextLevel.gameObject.SetActive(true);
+            restartGame.gameObject.SetActive(true);
+            quitGame.gameObject.SetActive(true);
         }
     }
 
@@ -178,4 +175,14 @@ public class GameManager : MonoBehaviour
         return tilesLeft;
     }
     //serialized data and methods
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void Quit() 
+    {
+    Application.Quit();
+    }
 }
