@@ -50,6 +50,8 @@ public class GameManager : MonoBehaviour
         }
         FindAll();
         
+
+
     }
 
     // Update is called once per frame
@@ -102,7 +104,26 @@ public class GameManager : MonoBehaviour
 
     public void TimeCooldownRunning()
     {
+        if (gameRunning)
+        {
+            StartCoroutine(TimeDecrease(gameTime));
+        }
+        else
+        {
+            StopAllCoroutines();
+        }
+    }
 
+    public IEnumerator TimeDecrease(float time)
+    {
+        while (time != 0f)
+        {
+            Debug.Log(time);
+            yield return new WaitForSeconds(0.01f);
+            time -= 0.01f;
+            gameTime = time;
+        }
+            
     }
     
     //methods for start
@@ -117,6 +138,8 @@ public class GameManager : MonoBehaviour
     public void SetUpGame()
     {
         gameRunning = true;
+
+        gameTime = 15.00f;
                 
         finishText.gameObject.SetActive(false);
         nextLevel.gameObject.SetActive(false);
