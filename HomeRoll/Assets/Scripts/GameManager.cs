@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     //universal data and objects
-    public Time timeCountdown;
     public Text timeCounter;
     public Text finishText;
     public Button nextLevel;
@@ -66,6 +65,7 @@ public class GameManager : MonoBehaviour
         if (gameRunning)
         {
             CheckFloor(GetFloor());
+            UpdateTimer(gameTime);
         }
         if (!gameRunning)
         {
@@ -78,6 +78,10 @@ public class GameManager : MonoBehaviour
         return floor;
     }
 
+    public void UpdateTimer(float time)
+    {
+        timeCounter.text = "Time Left: "+time;
+    }
     public void CheckFloor(GameObject floor)
     {
         FloorManager flManager = floor.GetComponent<FloorManager>();
@@ -94,9 +98,12 @@ public class GameManager : MonoBehaviour
 
     public void UpdateUI()
     {     
+        
         if (!gameRunning)
         {
             timeCounter.gameObject.SetActive(false);
+            float gTToDisplay = gameTime%1;
+            finishText.text = "Good Job! We Are very proud of you =* \n Your remaining time: " + gTToDisplay;
             finishText.gameObject.SetActive(true);
             nextLevel.gameObject.SetActive(true);
         }
@@ -108,22 +115,26 @@ public class GameManager : MonoBehaviour
         {
             StartCoroutine(TimeDecrease(gameTime));
         }
-        else
+        if (!gameRunning)      
         {
-            StopAllCoroutines();
+            
         }
     }
 
     public IEnumerator TimeDecrease(float time)
     {
-        while (time != 0f)
-        {
-            Debug.Log(time);
-            yield return new WaitForSeconds(0.01f);
-            time -= 0.01f;
-            gameTime = time;
-        }
-            
+        
+            if (time > 0f)
+            {                
+                yield return new WaitForSecondsRealtime(0.1f);
+                time -= 0.1f;
+                gameTime = time;               
+            }
+            if (time <= 0f)
+            {
+                gameRunning = false;               
+            }
+                   
     }
     
     //methods for start

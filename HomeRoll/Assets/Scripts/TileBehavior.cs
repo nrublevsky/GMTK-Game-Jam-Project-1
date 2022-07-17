@@ -9,6 +9,8 @@ public class TileBehavior : MonoBehaviour
 
     public GameObject dice;
 
+    public GameManager gameManager;
+
     public Renderer tileRenderer;
 
     public DiceSideBehavior sideBehavior;
@@ -18,6 +20,7 @@ public class TileBehavior : MonoBehaviour
     {
         tilePresent = true;
         dice = GameObject.Find("Player");
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
                
         sideBehavior = dice.GetComponentInChildren<DiceSideBehavior>();
 
@@ -42,11 +45,13 @@ public class TileBehavior : MonoBehaviour
             {
                 Debug.Log("blip");
                 tilePresent = false;
+                
             }
             else
             {
                 tilePresent = false;
                 Debug.Log("blop");
+                gameManager.gameTime -= 0.1f;
             }
         }
         

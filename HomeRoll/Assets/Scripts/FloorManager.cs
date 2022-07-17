@@ -34,7 +34,7 @@ public class FloorManager : MonoBehaviour
         Debug.Log("Available Tiles = " + tilesList.Count);
     }
 
-    public void RemoveTile()
+    public void RemoveTile()  
     {
         foreach (var tile in tilesList)
         {
