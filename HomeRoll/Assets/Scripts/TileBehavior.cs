@@ -43,13 +43,13 @@ public class TileBehavior : MonoBehaviour
                 Debug.Log("blip");
                 tilePresent = false;
             }
-            Debug.Log("blip");
-            tilePresent = false;
+            else
+            {
+                tilePresent = false;
+                Debug.Log("blop");
+            }
         }
-        if (gameObject.tag == "Destroyer")
-        {
-            Debug.Log("blop");
-        }
+        
     }
 
     public void SetUpTile()
