@@ -155,9 +155,10 @@ MonoBehaviour:
   timeCounter: {fileID: 1375022400}
   finishText: {fileID: 2035004760}
   nextLevel: {fileID: 437574288}
-  quitGame: {fileID: 0}
-  restartGame: {fileID: 0}
+  quitGame: {fileID: 911727771}
+  restartGame: {fileID: 697463798}
   gameRunning: 0
+  currentSceneName: 
   player: {fileID: 1197364466}
   playerLives: 0
   floor: {fileID: 820898477}

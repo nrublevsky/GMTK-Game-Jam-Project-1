@@ -1,6 +1,7 @@
  using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -15,6 +16,8 @@ public class GameManager : MonoBehaviour
 
     public bool gameRunning;
 
+    public string currentSceneName;
+
     //level data and objects
     public GameObject player;
 
@@ -27,6 +30,23 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (SceneManager.GetActiveScene().name == "Menu")
+        {
+
+        }
+        if (SceneManager.GetActiveScene().name == "Level1")
+
+        {
+
+        }
+        if (SceneManager.GetActiveScene().name == "Level2")
+        {
+
+        }
+        if (SceneManager.GetActiveScene().name == "Level3")
+        {
+
+        }
         FindAll();
         
     }
@@ -94,6 +114,8 @@ public class GameManager : MonoBehaviour
                 
         finishText.gameObject.SetActive(false);
         nextLevel.gameObject.SetActive(false);
+        restartGame.gameObject.SetActive(false);
+        quitGame.gameObject.SetActive(false);
     }
 
     public GameObject Player()

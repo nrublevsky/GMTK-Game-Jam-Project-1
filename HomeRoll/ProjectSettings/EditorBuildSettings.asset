@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainLevel_newController_fix.unity
+    guid: 6611b549546e445d3b5ee0de2307031d
   m_configObjects: {}
