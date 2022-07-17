@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     public Button quitGame;
     public Button restartGame;
 
+    public float gameTime;
+
     public bool gameRunning;
 
     public string currentSceneName;
@@ -35,7 +37,6 @@ public class GameManager : MonoBehaviour
 
         }
         if (SceneManager.GetActiveScene().name == "Level1")
-
         {
 
         }
@@ -67,9 +68,7 @@ public class GameManager : MonoBehaviour
         if (!gameRunning)
         {
             UpdateUI();
-        }
-        
-        
+        }    
     }
 
     public GameObject GetFloor()
@@ -83,7 +82,7 @@ public class GameManager : MonoBehaviour
         tilesLeft = flManager.tilesList.Count;
         if (tilesLeft < 64)
         {
-            
+            TimeCooldownRunning();
         }
         if (tilesLeft < 1)
         {
@@ -92,15 +91,18 @@ public class GameManager : MonoBehaviour
     }
 
     public void UpdateUI()
-    {
-        
+    {     
         if (!gameRunning)
         {
-
             timeCounter.gameObject.SetActive(false);
             finishText.gameObject.SetActive(true);
             nextLevel.gameObject.SetActive(true);
         }
+    }
+
+    public void TimeCooldownRunning()
+    {
+
     }
     
     //methods for start

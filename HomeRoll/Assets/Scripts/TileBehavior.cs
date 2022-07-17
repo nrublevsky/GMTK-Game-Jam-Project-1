@@ -9,7 +9,7 @@ public class TileBehavior : MonoBehaviour
 
     public GameObject dice;
 
-    public MeshRenderer tileRenderer;
+    public Renderer tileRenderer;
 
     public DiceSideBehavior sideBehavior;
 
@@ -22,12 +22,14 @@ public class TileBehavior : MonoBehaviour
         sideBehavior = dice.GetComponentInChildren<DiceSideBehavior>();
 
         tileRenderer = GetComponent<MeshRenderer>();
+
+        SetUpTile();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
 
@@ -53,29 +55,29 @@ public class TileBehavior : MonoBehaviour
     public void SetUpTile()
     {
 
-        switch (tileState)
+        if (tileState == 1)
         {
-            case 1:
-                tileRenderer.material.color = new Color(174,255,165);
-                break;
-            case 2:
-                tileRenderer.material.color = new Color(248, 255, 95);
-                break;
-            case 3:
-                tileRenderer.material.color = new Color(255, 149, 124);
-                break;
-            case 4:
-                tileRenderer.material.color = new Color(255, 133, 229);
-                break;
-            case 5:
-                tileRenderer.material.color = new Color(153, 136, 255);
-                break;
-            case 6:
-                tileRenderer.material.color = new Color(85, 255, 237);
-                break;
-            default:
-
-                break;
+            tileRenderer.material.color = new Color32(174, 255, 165, 255);
+        }
+        if (tileState == 2)
+        {
+            tileRenderer.material.color = new Color32(248, 255, 95, 255);
+        }
+        if (tileState == 3)
+        {
+            tileRenderer.material.color = new Color32(255, 149, 124, 255);
+        }
+        if (tileState == 4)
+        {
+            tileRenderer.material.color = new Color32(255, 133, 229, 255);
+        }
+        if (tileState == 5)
+        {
+            tileRenderer.material.color = new Color32(153, 136, 255, 255);
+        }
+        if (tileState == 6)
+        {
+            tileRenderer.material.color = new Color32(85, 255, 237, 255);
         }
     }
     public void CheckState()
