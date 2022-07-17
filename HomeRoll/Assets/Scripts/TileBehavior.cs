@@ -9,6 +9,8 @@ public class TileBehavior : MonoBehaviour
 
     public GameObject dice;
 
+    public MeshRenderer tileRenderer;
+
     public DiceSideBehavior sideBehavior;
 
 
@@ -19,6 +21,7 @@ public class TileBehavior : MonoBehaviour
                
         sideBehavior = dice.GetComponentInChildren<DiceSideBehavior>();
 
+        tileRenderer = GetComponent<MeshRenderer>();
     }
 
     // Update is called once per frame
@@ -46,12 +49,37 @@ public class TileBehavior : MonoBehaviour
             Debug.Log("blop");
         }
     }
+
+    public void SetUpTile()
+    {
+
+        switch (tileState)
+        {
+            case 0:
+                
+                break;
+            case 1:
+
+                break;
+            case 2:
+
+                break;
+            case 3:
+
+                break;
+            case 4:
+
+                break;
+            case 5:
+
+                break;
+            default:
+
+                break;
+        }
+    }
     public void CheckState()
     {
-        switch (tileState)
-        {          
-                
-        }
         
     }
 

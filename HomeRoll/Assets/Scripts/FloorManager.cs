@@ -43,12 +43,7 @@ public class FloorManager : MonoBehaviour
                 tilesState = tile.GetComponent<TileBehavior>();
                 if (tilesState.tilePresent != true)
                 {
-                    Destroy(tile);
-                   
-                }
-                else
-                {
-                
+                    Destroy(tile);   
                 }
             }
             else
