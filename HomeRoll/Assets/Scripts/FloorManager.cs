@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FloorManager : MonoBehaviour
 {
-    public GameObject[] tilesList;
+    public List<GameObject> tilesList;
     public TileBehavior tilesState;
 
     public int availableTiles;
@@ -22,8 +22,16 @@ public class FloorManager : MonoBehaviour
 
     public void GatherTiles()
     {
-        tilesList = GameObject.FindGameObjectsWithTag("FloorTile");
-        Debug.Log("Available Tiles = " + tilesList.Length);
+        GameObject[] tiles = GameObject.FindGameObjectsWithTag("FloorTile");
+        Debug.Log("Available Tiles = " + tiles.Length);
+
+        for (int i = 0; i < tiles.Length; i++)
+        {
+            GameObject tile = tiles[i];
+            tilesList.Add(tile);
+        }
+
+        Debug.Log("Available Tiles = " + tilesList.Count);
     }
 
     public void RemoveTile()
@@ -37,7 +45,7 @@ public class FloorManager : MonoBehaviour
             }
             else
             {
-                Destroy(tile.gameObject);
+                
             }
         }
     }
