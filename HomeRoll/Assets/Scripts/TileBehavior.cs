@@ -16,6 +16,9 @@ public class TileBehavior : MonoBehaviour
     {
         tilePresent = true;
         dice = GameObject.Find("Player");
+        
+        
+        sideBehavior = dice.GetComponentInChildren<DiceSideBehavior>();
 
     }
 
@@ -28,8 +31,14 @@ public class TileBehavior : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     { 
-        if (gameObject.tag == "SideTile")
+        if (collision.gameObject.tag == "SideTile")
         {
+            sideBehavior = collision.gameObject.GetComponentInChildren<DiceSideBehavior>();
+            if (sideBehavior.sideNum == tileState)
+            {
+                Debug.Log("blip");
+                tilePresent = false;
+            }
             Debug.Log("blip");
             tilePresent = false;
         }

@@ -17,7 +17,7 @@ public class FloorManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        RemoveTile();  
     }
 
     public void GatherTiles()
@@ -38,14 +38,22 @@ public class FloorManager : MonoBehaviour
     {
         foreach (var tile in tilesList)
         {
-            tilesState = tile.GetComponent<TileBehavior>();
-            if (tilesState.tilePresent == true)
-            {
-                break;
+            if (tile.gameObject != null)
+            { 
+                tilesState = tile.GetComponent<TileBehavior>();
+                if (tilesState.tilePresent != true)
+                {
+                    Destroy(tile);
+                   
+                }
+                else
+                {
+                
+                }
             }
             else
             {
-                
+                tilesList.Remove(tile);
             }
         }
     }

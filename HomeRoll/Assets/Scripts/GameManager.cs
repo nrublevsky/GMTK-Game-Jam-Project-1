@@ -36,17 +36,13 @@ public class GameManager : MonoBehaviour
     public void ControlSituation() 
     {
         CheckFloor();
-        UpdateScore();
+       
     }
     public void CheckFloor()
     {
         
     }
     
-    public void UpdateScore()
-    {
-
-    }
     //methods for start
 
     public void FindAll()

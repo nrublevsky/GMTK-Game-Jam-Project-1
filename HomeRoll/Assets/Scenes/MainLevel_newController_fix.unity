@@ -388,6 +388,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6339037535511820794, guid: f0b6cbb4355911e499c7138cea8ff673, type: 3}
   m_PrefabInstance: {fileID: 6339037535610756505}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &820898478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820898477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12ef316d8107d74d95bbc01253bd191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilesList: []
+  tilesState: {fileID: 0}
+  availableTiles: 0
 --- !u!1 &1197364466
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,7 +572,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 543269280408968587, guid: f0b6cbb4355911e499c7138cea8ff673, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f0b6cbb4355911e499c7138cea8ff673, type: 3}
 --- !u!1001 &9174711464003153539
 PrefabInstance:
